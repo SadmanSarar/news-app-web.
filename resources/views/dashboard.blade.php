@@ -6,7 +6,7 @@
     <link rel="icon" type="image/png" href="../assets/img/favicon.png"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 
-    <title>Material Dashboard Pro by Creative Tim</title>
+    <title>{{ config('app.name', '') }}</title>
 
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
     <meta name="viewport" content="width=device-width"/>
@@ -146,10 +146,15 @@
                 </li>
 
                 <li>
-                    <a href="#">
-                        <i class="material-icons">power_settings_new</i>
-                        <p> Logout </p>
+                    <a type="submit" onclick="document.getElementById('navbar_logout').submit();">
+                        <i class="material-icons" style="font-size: 24px ">power_settings_new</i>
+                        <p style="color: #FFFFFF; font-size: 14px;margin: 0;height: auto; white-space: nowrap;">
+                            Logout </p>
                     </a>
+                    <form id="navbar_logout" action="{{route('logout')}}" method="POST" style="display: none">
+                        {!! csrf_field() !!}
+
+                    </form>
                 </li>
 
             </ul>
@@ -183,8 +188,15 @@
                             <ul class="dropdown-menu">
                                 <li><a href="#"><i class="material-icons" style="margin-right: 16px">account_circle</i>Profile</a>
                                 </li>
-                                <li><a href="#"><i class="material-icons"
-                                                   style="margin-right: 16px">power_settings_new</i>Logout</a></li>
+                                <li>
+                                    <a type="submit" onclick="document.getElementById('menu_logout').submit();"><i class="material-icons"
+                                                                                                                   style="margin-right: 16px">power_settings_new</i>
+                                        Logout</a>
+                                    <form id="menu_logout" action="{{route('logout')}}" method="post" style="display: none;">
+                                        {!! csrf_field() !!}
+                                    </form>
+                                </li>
+
                             </ul>
                         </li>
                         <li class="separator hidden-lg hidden-md"></li>
