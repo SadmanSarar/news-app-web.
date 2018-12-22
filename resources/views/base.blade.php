@@ -31,6 +31,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
           integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
+    @stack('css')
+
 </head>
 
 
@@ -102,7 +104,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="{{route('category.index')}}">
                         <i class="material-icons">category</i>
                         <p> Manage Category
                         </p>
@@ -209,6 +211,7 @@
 
 
         <div class="content">
+            @yield('content')
         </div>
 
 
@@ -300,6 +303,8 @@
         demo.initVectorMap();
     });
 </script>
+
+@stack('js')
 
 
 </html>
