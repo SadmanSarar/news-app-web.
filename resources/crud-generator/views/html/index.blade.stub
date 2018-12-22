@@ -3,25 +3,33 @@
 @section('content')
     <div class="container">
         <div class="row">
-
-            <div class="col-md-9">
+            <div class="col-md-12">
                 <div class="card">
-                    <div class="card-header">%%crudNameCap%%</div>
-                    <div class="card-body">
-                        <a href="{{ url('/%%routeGroup%%%%viewName%%/create') }}" class="btn btn-success btn-sm" title="Add New %%modelName%%">
-                            <i class="fa fa-plus" aria-hidden="true"></i> Add New
-                        </a>
+                    <div class="card-header card-header-icon" data-background-color="rose">
+                           <i class="fas fa-money-bill-wave" style="font-size: 32px"></i>
+                    </div>
+                    <div class="card-content">
+                        <h4 class="card-title">%%crudNameCap%%</h4>
+                        <div class="row">
+                                                    <a  style="margin-left: 20px" href="{{ url('/%%routeGroup%%%%viewName%%/create') }}" class="btn btn-success pull-left"
+                                                       title="Add New News">
+                                                        <i class="fa fa-plus" aria-hidden="true"></i> Add New
+                                                    </a>
 
-                        <form method="GET" action="{{ url('/%%routeGroup%%%%viewName%%') }}" accept-charset="UTF-8" class="form-inline my-2 my-lg-0 float-right" role="search">
-                            <div class="input-group">
-                                <input type="text" class="form-control" name="search" placeholder="Search..." value="{{ request('search') }}">
-                                <span class="input-group-append">
-                                    <button class="btn btn-secondary" type="submit">
-                                        <i class="fa fa-search"></i>
-                                    </button>
-                                </span>
-                            </div>
-                        </form>
+                                                    <form method="GET" action="{{ url('/%%routeGroup%%%%viewName%%') }}" accept-charset="UTF-8"
+                                                          class="pull-right form-inline my-2 my-lg-0 float-right" role="search" >
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control" name="search" placeholder="Search..."
+                                                                   value="{{ request('search') }}">
+                                                            <span class="input-group-append">
+                                                            <button class="btn btn-primary" type="submit" style="margin-right:10px;">
+                                                                <i class="fa fa-search"></i>
+                                                            </button>
+                                                        </span>
+                                                        </div>
+                                                    </form>
+
+                                                </div>
 
                         <br/>
                         <br/>
@@ -29,7 +37,7 @@
                             <table class="table">
                                 <thead>
                                     <tr>
-                                        <th>#</th>%%formHeadingHtml%%<th>Actions</th>
+                                        <th>#</th>%%formHeadingHtml%%<th class="text-center" align="center" style="text-align:center">Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -37,7 +45,7 @@
                                     <tr>
                                         <td>{{ $loop->iteration }}</td>
                                         %%formBodyHtml%%
-                                        <td>
+                                        <td align="right">
                                             <a href="{{ url('/%%routeGroup%%%%viewName%%/' . $item->%%primaryKey%%) }}" title="View %%modelName%%"><button class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i> View</button></a>
                                             <a href="{{ url('/%%routeGroup%%%%viewName%%/' . $item->%%primaryKey%% . '/edit') }}" title="Edit %%modelName%%"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a>
 
