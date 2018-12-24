@@ -20,6 +20,7 @@ class CreateReadersTable extends Migration
             $table->string('email')->unique();
             $table->string('password');
             $table->timestamps();
+            $table->softDeletes();
         });
 
         DB::table('readers')->insert(

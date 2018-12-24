@@ -19,6 +19,8 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/', 'HomeController@index');
     Route::resource('news', 'Admin\\NewsController');
     Route::resource('category', 'Admin\\CategoryController');
+    Route::resource('notification', 'Admin\\NotificationController');
+    Route::post('reader/update_pass/{id}', 'Admin\\ReaderController@update_pass')->name('reader.update_pass');
+    Route::resource('reader', 'Admin\\ReaderController');
 });
 
-Route::resource('notification', 'Admin\\NotificationController');

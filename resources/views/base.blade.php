@@ -127,7 +127,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="{{route('reader.index')}}">
                         <i class="fa fa-users"></i>
                         <p> Registered Readers </p>
                     </a>
