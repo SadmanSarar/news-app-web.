@@ -18,8 +18,8 @@ class CreateNotificationsTable extends Migration
             $table->text('title');
             $table->text('message');
             $table->enum('type', ['open-url', 'open-news', 'open-app']);
-            $table->text('url');
-            $table->unsignedInteger('news_id');
+            $table->text('url')->nullable();
+            $table->unsignedInteger('news_id')->nullable();
             $table->timestamps();
             $table->softDeletes();
 

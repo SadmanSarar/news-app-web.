@@ -120,7 +120,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="{{route('notification.index')}}">
                         <i class="material-icons">notifications</i>
                         <p> Manage Notification </p>
                     </a>

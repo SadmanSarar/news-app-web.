@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0bfd599-7b32-4083-b377-2c18da7adcda" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Data/Model/Category.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/crudgenerator.php" afterPath="$PROJECT_DIR$/config/crudgenerator.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2018_12_20_083211_create_categories_table.php" afterPath="$PROJECT_DIR$/database/migrations/2018_12_20_083211_create_categories_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2018_12_20_084048_create_notifications_table.php" afterPath="$PROJECT_DIR$/database/migrations/2018_12_20_084048_create_notifications_table.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/base.blade.php" afterPath="$PROJECT_DIR$/resources/views/base.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
     </list>
@@ -18,46 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/admin/category/index.blade.php">
+      <file leaf-file-name="form.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/notification/form.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="57" column="45" lean-forward="false" selection-start-line="54" selection-start-column="43" selection-end-line="57" selection-end-column="45" />
-              <folding>
-                <element signature="e#3163#3197#0#HTML" expanded="true" />
-                <element signature="e#3510#3536#0#HTML" expanded="true" />
-                <element signature="e#3611#3637#0#HTML" expanded="true" />
-                <element signature="e#3721#3747#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/admin/category/show.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="39" column="28" lean-forward="false" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/routes/web.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="21" column="3" lean-forward="false" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Category.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Data/Model/Category.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="31" column="26" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="26" />
+            <state relative-caret-position="360">
+              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -89,7 +51,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/database/migrations/2018_12_20_084048_create_notifications_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_12_20_085908_create_api_tokens_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_12_20_085709_create_readers_table.php" />
@@ -115,7 +76,6 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/NewsController.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/news/index.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_12_20_083342_create_news_table.php" />
-        <option value="$PROJECT_DIR$/resources/views/base.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_12_20_083211_create_categories_table.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/category/form.blade.php" />
         <option value="$PROJECT_DIR$/app/Data/Model/Category.php" />
@@ -123,6 +83,13 @@
         <option value="$PROJECT_DIR$/resources/views/admin/category/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/category/show.blade.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/resources/views/base.blade.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2018_12_20_084048_create_notifications_table.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/notification/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/Admin/NewsStoreRequest.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/NotificationController.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/notification/show.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/notification/form.blade.php" />
       </list>
     </option>
   </component>
@@ -180,25 +147,22 @@
               <item name="news-app" type="b2602c69:ProjectViewProjectNode" />
               <item name="news-app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Data" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="news-app" type="b2602c69:ProjectViewProjectNode" />
               <item name="news-app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Data" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Model" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Requests" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="news-app" type="b2602c69:ProjectViewProjectNode" />
               <item name="news-app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="database" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="news-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="news-app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="database" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="migrations" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Requests" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="news-app" type="b2602c69:ProjectViewProjectNode" />
@@ -234,6 +198,14 @@
               <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="news" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="news-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="news-app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="notification" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -244,7 +216,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="web&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/routes/web.php&#10;Cate&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/app/Http/Controllers/Admin/CategoryController.php&#10;Categor&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/app/Data/Model/Category.php&#10;create_cate&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/database/migrations/2018_12_20_083211_create_categories_table.php&#10;Category&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/app/Http/Controllers/Admin/CategoryController.php&#10;categor&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/database/migrations/2018_12_20_083211_create_categories_table.php&#10;base&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/resources/views/base.blade.php&#10;Show&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/resources/views/admin/news/show.blade.php&#10;index&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/resources/views/admin/news/index.blade.php&#10;News&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/app/Data/Model/News.php&#10;create&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/resources/views/admin/news/create.blade.php&#10;inde&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/resources/views/admin/news/index.blade.php&#10;env&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/.env&#10;Catego&#9;null&#9;null&#10;compose&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/composer.json&#10;Home&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/app/Http/Controllers/HomeController.php&#10;das&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/resources/views/dashboard.blade.php&#10;dashboar&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/resources/views/dashboard.blade.php&#10;app&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/resources/views/layouts/app.blade.php" />
+    <property name="SearchEverywhereHistoryKey" value="NotificationCon&#9;null&#9;null&#10;index&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/resources/views/admin/notification/index.blade.php&#10;base&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/resources/views/base.blade.php&#10;notifi&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/database/migrations/2018_12_20_084048_create_notifications_table.php&#10;web&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/routes/web.php&#10;Cate&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/app/Http/Controllers/Admin/CategoryController.php&#10;Categor&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/app/Data/Model/Category.php&#10;create_cate&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/database/migrations/2018_12_20_083211_create_categories_table.php&#10;Category&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/app/Http/Controllers/Admin/CategoryController.php&#10;categor&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/database/migrations/2018_12_20_083211_create_categories_table.php&#10;Show&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/resources/views/admin/news/show.blade.php&#10;News&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/app/Data/Model/News.php&#10;create&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/resources/views/admin/news/create.blade.php&#10;inde&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/resources/views/admin/news/index.blade.php&#10;env&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/.env&#10;Catego&#9;null&#9;null&#10;compose&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/composer.json&#10;Home&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/app/Http/Controllers/HomeController.php&#10;das&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/resources/views/dashboard.blade.php&#10;dashboar&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/resources/views/dashboard.blade.php&#10;app&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/resources/views/layouts/app.blade.php" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -282,15 +254,16 @@
       <workItem from="1545293735174" duration="5211000" />
       <workItem from="1545458481824" duration="4378000" />
       <workItem from="1545541900627" duration="121000" />
-      <workItem from="1545631816408" duration="8680000" />
+      <workItem from="1545631816408" duration="9879000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23101000" />
+    <option name="totallyTimeSpent" value="24300000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25767368" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -299,7 +272,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -323,55 +296,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="193" column="0" lean-forward="true" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_20_084048_create_notifications_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="25" column="66" lean-forward="false" selection-start-line="25" selection-start-column="66" selection-end-line="25" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_20_085135_create_setting_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_20_085709_create_readers_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="21" column="33" lean-forward="true" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_20_085908_create_api_tokens_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="23" column="74" lean-forward="true" selection-start-line="23" selection-start-column="74" selection-end-line="23" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="32" column="10" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="32" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -588,14 +512,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_20_083342_create_news_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="22" column="55" lean-forward="false" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/news/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="65">
@@ -611,7 +527,7 @@
         <state relative-caret-position="317">
           <caret line="65" column="20" lean-forward="false" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
           <folding>
-            <element signature="e#46#74#0#PHP" expanded="true" />
+            <element signature="e#46#74#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -636,14 +552,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="17" column="33" lean-forward="true" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/base.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="106" column="52" lean-forward="false" selection-start-line="106" selection-start-column="52" selection-end-line="106" selection-end-column="52" />
           <folding />
         </state>
       </provider>
@@ -685,7 +593,7 @@
         <state relative-caret-position="432">
           <caret line="30" column="66" lean-forward="false" selection-start-line="30" selection-start-column="66" selection-end-line="30" selection-end-column="66" />
           <folding>
-            <element signature="e#46#68#0#PHP" expanded="true" />
+            <element signature="e#46#68#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -715,6 +623,78 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="21" column="3" lean-forward="false" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/base.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="122" column="50" lean-forward="false" selection-start-line="122" selection-start-column="50" selection-end-line="122" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_20_083342_create_news_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="20" column="55" lean-forward="false" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_20_084048_create_notifications_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/NotificationController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="94" column="5" lean-forward="false" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Data/Model/Notification.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="29" column="4" lean-forward="false" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/notification/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="43" column="45" lean-forward="true" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/notification/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="53" column="53" lean-forward="false" selection-start-line="53" selection-start-column="53" selection-end-line="53" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/Admin/NewsStoreRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="17" lean-forward="false" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/notification/form.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
         </state>
       </provider>

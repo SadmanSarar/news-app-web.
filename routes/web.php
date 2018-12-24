@@ -20,3 +20,5 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('news', 'Admin\\NewsController');
     Route::resource('category', 'Admin\\CategoryController');
 });
+
+Route::resource('notification', 'Admin\\NotificationController');
