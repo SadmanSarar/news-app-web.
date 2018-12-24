@@ -104,7 +104,7 @@
                 </li>
 
                 <li>
-                    <a href="{{route('category.index')}}">
+                    <a href="#">
                         <i class="material-icons">category</i>
                         <p> Manage Category
                         </p>
@@ -112,7 +112,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="{{route('news.index')}}">
                         <i class="fa fa-newspaper"></i>
                         <p> Manage News
                         </p>
