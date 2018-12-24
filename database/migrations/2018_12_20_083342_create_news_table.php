@@ -17,11 +17,11 @@ class CreateNewsTable extends Migration
             $table->increments('id');
             $table->text('title');
             $table->text('body');
-            $table->text('image');
-            $table->unsignedInteger('category_id');
+            $table->text('image')->nullable();
+            $table->unsignedInteger('category_id')->default(1);
             $table->enum('type',['standard','video-post','video-upload','photo-upload']);
-            $table->boolean('published');
-            $table->timestamp('published_at');
+            $table->boolean('published')->default(false);
+            $table->timestamp('published_at')->nullable();
             $table->timestamps();
             $table->softDeletes();
 

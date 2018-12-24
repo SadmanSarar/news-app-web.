@@ -231,6 +231,7 @@
 </body>
 
 <!--   Core JS Files   -->
+
 <script src="{{ asset('js/jquery.min.js')}}" type="text/javascript"></script>
 <script src="{{ asset('js/bootstrap.min.js')}}" type="text/javascript"></script>
 <script src="{{ asset('js/material.min.js')}}" type="text/javascript"></script>
@@ -238,7 +239,7 @@
 
 <!-- Include a polyfill for ES6 Promises (optional) for IE11, UC Browser and Android browser support SweetAlert -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
-
+<script src="https://cdn.ckeditor.com/ckeditor5/11.2.0/classic/ckeditor.js"></script>
 <!-- Library for adding dinamically elements -->
 <script src="{{ asset('js/arrive.min.js" type="text/javascript')}}"></script>
 
