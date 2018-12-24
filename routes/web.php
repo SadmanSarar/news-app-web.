@@ -18,7 +18,5 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/home', 'HomeController@index')->name('home');
     Route::get('/', 'HomeController@index');
     Route::resource('news', 'Admin\\NewsController');
+    Route::resource('category', 'Admin\\CategoryController');
 });
-
-
-

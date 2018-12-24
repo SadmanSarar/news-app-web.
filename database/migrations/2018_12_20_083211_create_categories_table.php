@@ -17,9 +17,17 @@ class CreateCategoriesTable extends Migration
             $table->increments('id');
             $table->text('name');
             $table->text('image')->nullable();
-            $table->text('description');
+            $table->text('description')->nullable();
             $table->timestamps();
+            $table->softDeletes();
         });
+
+        DB::table('categories')
+            ->insert([
+                         'name' => 'None',
+                         'image' => null,
+                         'description' => null,
+                     ]);
     }
 
     /**

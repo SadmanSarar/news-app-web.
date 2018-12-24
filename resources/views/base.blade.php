@@ -104,7 +104,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="{{route('category.index')}}">
                         <i class="material-icons">category</i>
                         <p> Manage Category
                         </p>
