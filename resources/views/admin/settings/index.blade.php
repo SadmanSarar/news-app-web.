@@ -18,7 +18,7 @@
                                 </th>
                                 <td>
                                     <label>FCM Key</label>
-                                    <input class="form-control" rows="3" name="app_fcm_key" id="app_fcm_key" required="" data-gramm="true" data-txt_gramm_id="0db6ce15-5350-1ce4-385e-7022efd9ea9d" data-gramm_id="0db6ce15-5350-1ce4-385e-7022efd9ea9d" spellcheck="false" data-gramm_editor="true" style="z-index: auto; position: relative; line-height: 20px; font-size: 14px; transition: none 0s ease 0s; !important;" value="{{$values['app_fcm_key']}}"/>
+                                    <input class="form-control" rows="3" name="app_fcm_key" id="app_fcm_key" required="" data-gramm="true" data-txt_gramm_id="0db6ce15-5350-1ce4-385e-7022efd9ea9d" data-gramm_id="0db6ce15-5350-1ce4-385e-7022efd9ea9d" spellcheck="false" data-gramm_editor="true" style="z-index: auto; position: relative; line-height: 20px; font-size: 14px; transition: none 0s ease 0s; !important;" value="{{isset($values['app_fcm_key']) ? $values['app_fcm_key'] : ''}}"/>
                                 </td>
                             </tr>
 
@@ -29,7 +29,7 @@
                                 </th>
                                 <td>
                                     <label>Api key</label>
-                                    <textarea class="form-control" rows="1" name="app_api_key" id="app_fcm_key" required="" data-gramm="true" data-txt_gramm_id="0db6ce15-5350-1ce4-385e-7022efd9ea9d" data-gramm_id="0db6ce15-5350-1ce4-385e-7022efd9ea9d" spellcheck="false" data-gramm_editor="true" style="z-index: auto; position: relative; line-height: 20px; font-size: 14px; transition: none 0s ease 0s; !important;">{{$values['app_api_key']}}</textarea>
+                                    <textarea class="form-control" rows="1" name="app_api_key" id="app_fcm_key" required="" data-gramm="true" data-txt_gramm_id="0db6ce15-5350-1ce4-385e-7022efd9ea9d" data-gramm_id="0db6ce15-5350-1ce4-385e-7022efd9ea9d" spellcheck="false" data-gramm_editor="true" style="z-index: auto; position: relative; line-height: 20px; font-size: 14px; transition: none 0s ease 0s; !important;">{{isset($values['app_api_key']) ? $values['app_api_key'] : ''}}</textarea>
                                 </td>
                             </tr>
 
@@ -41,7 +41,7 @@
                                 <td>
                                     <label>Privacy Policy</label>
                                     <textarea class="form-control" rows="5" name="privacy_policy" type="textarea"
-                                              id="privacy_policy">{{$values['privacy_policy']}}
+                                              id="privacy_policy">{{isset($values['privacy_policy']) ? $values['privacy_policy'] : ''}}
                                     </textarea>
                                 </td>
                             </tr>
