@@ -13,7 +13,7 @@
 
 
 Auth::routes();
-Route::any('/register','HomeController@index');
+Route::any('/register', 'HomeController@index');
 Route::group(['middleware' => 'auth'], function () {
     Route::get('/home', 'HomeController@index')->name('home');
     Route::get('/', 'HomeController@index');
@@ -24,6 +24,10 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('reader/update_pass/{id}', 'Admin\\ReaderController@update_pass')->name('reader.update_pass');
     Route::resource('user', 'Admin\\UserController');
     Route::post('user/update_pass/{id}', 'Admin\\UserController@update_pass')->name('user.update_pass');
+    Route::resource('settings', 'Admin\\SettingsController')->only(
+        [
+            'index', 'store'
+        ]);
 });
 
 
