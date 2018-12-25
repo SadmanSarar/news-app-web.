@@ -134,7 +134,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="{{route('user.index')}}">
                         <i class="fa fa-users-cog"></i>
                         <p> Administrator </p>
                     </a>

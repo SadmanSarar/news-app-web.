@@ -20,7 +20,10 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('news', 'Admin\\NewsController');
     Route::resource('category', 'Admin\\CategoryController');
     Route::resource('notification', 'Admin\\NotificationController');
-    Route::post('reader/update_pass/{id}', 'Admin\\ReaderController@update_pass')->name('reader.update_pass');
     Route::resource('reader', 'Admin\\ReaderController');
+    Route::post('reader/update_pass/{id}', 'Admin\\ReaderController@update_pass')->name('reader.update_pass');
+    Route::resource('user', 'Admin\\UserController');
+    Route::post('user/update_pass/{id}', 'Admin\\UserController@update_pass')->name('user.update_pass');
 });
+
 

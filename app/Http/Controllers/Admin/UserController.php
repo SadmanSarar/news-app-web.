@@ -2,15 +2,15 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Data\Model\Reader;
 use App\Http\Controllers\Controller;
 use App\Http\Requests;
-use App\Http\Requests\Admin\Reader\CreateRequest;
-use App\Http\Requests\Admin\Reader\UpdatePasswordRequest;
-use App\Http\Requests\Admin\Reader\UpdateRequest;
+use App\Http\Requests\Admin\User\CreateRequest;
+use App\Http\Requests\Admin\User\UpdatePasswordRequest;
+use App\Http\Requests\Admin\User\UpdateRequest;
+use App\User;
 use Illuminate\Http\Request;
 
-class ReaderController extends Controller
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -24,15 +24,15 @@ class ReaderController extends Controller
         $perPage = 25;
 
         if (!empty($keyword)) {
-            $reader = Reader::where('name', 'LIKE', "%$keyword%")
+            $user = User::where('name', 'LIKE', "%$keyword%")
                 ->orWhere('email', 'LIKE', "%$keyword%")
-                ->orWhere('image', 'LIKE', "%$keyword%")
+                ->orWhere('role', 'LIKE', "%$keyword%")
                 ->latest()->paginate($perPage);
         } else {
-            $reader = Reader::latest()->paginate($perPage);
+            $user = User::latest()->paginate($perPage);
         }
 
-        return view('admin.reader.index', compact('reader'));
+        return view('admin.user.index', compact('user'));
     }
 
     /**
@@ -42,30 +42,25 @@ class ReaderController extends Controller
      */
     public function create()
     {
-        return view('admin.reader.create');
+        return view('admin.user.create');
     }
 
     /**
      * Store a newly created resource in storage.
      *
      * @param CreateRequest|Request $request
-     *
      * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
     public function store(CreateRequest $request)
     {
 
         $requestData = $request->all();
-        if ($request->hasFile('image')) {
-            $requestData['image'] = $request->file('image')
-                ->store('uploads', 'public');
-        }
 
         $requestData['password'] = bcrypt($requestData['password']);
 
-        Reader::create($requestData);
+        User::create($requestData);
 
-        return redirect('reader')->with('flash_message', 'Reader added!');
+        return redirect('user')->with('flash_message', 'User added!');
     }
 
     /**
@@ -77,9 +72,9 @@ class ReaderController extends Controller
      */
     public function show($id)
     {
-        $reader = Reader::findOrFail($id);
+        $user = User::findOrFail($id);
 
-        return view('admin.reader.show', compact('reader'));
+        return view('admin.user.show', compact('user'));
     }
 
     /**
@@ -91,9 +86,9 @@ class ReaderController extends Controller
      */
     public function edit($id)
     {
-        $reader = Reader::findOrFail($id);
+        $user = User::findOrFail($id);
 
-        return view('admin.reader.edit', compact('reader'));
+        return view('admin.user.edit', compact('user'));
     }
 
     /**
@@ -105,23 +100,22 @@ class ReaderController extends Controller
      */
     public function update(UpdateRequest $request, $id)
     {
-        $oldReader = Reader::where('email', '=', $request['email'])->first();
-        if ($oldReader != null && $oldReader->id != $id) {
-            return redirect()->back()->withErrors([
-                                                      'email' => 'Email already taken'
-                                                  ]);
-        }
-
         $requestData = $request->all();
-        if ($request->hasFile('image')) {
-            $requestData['image'] = $request->file('image')
-                ->store('uploads', 'public');
+
+        $oldUser = User::where('email', '=', $request['email'])->first();
+        if ($oldUser != null && $oldUser->id != $id) {
+            return redirect()->back()->withErrors(
+                [
+                    'email' => 'Email already taken'
+                ]);
         }
 
-        $reader = Reader::findOrFail($id);
-        $reader->update($requestData);
+        $user = User::findOrFail($id);
+        $user->update($requestData);
+        $user->role = $requestData['role'];
+        $user->save();
 
-        return redirect('reader')->with('flash_message', 'Reader updated!');
+        return redirect('user')->with('flash_message', 'User updated!');
     }
 
     /**
@@ -133,9 +127,9 @@ class ReaderController extends Controller
      */
     public function destroy($id)
     {
-        Reader::destroy($id);
+        User::destroy($id);
 
-        return redirect('reader')->with('flash_message', 'Reader deleted!');
+        return redirect('user')->with('flash_message', 'User deleted!');
     }
 
     /**
@@ -143,12 +137,12 @@ class ReaderController extends Controller
      * @return \Illuminate\Http\RedirectResponse
      */
     public function update_pass(UpdatePasswordRequest $request,$id){
-        $reader = Reader::findOrFail($id);
+        $user = User::findOrFail($id);
 
-        $reader->password = bcrypt($request['password']);
+        $user->password = bcrypt($request['password']);
 
-        $reader->save();
+        $user->save();
 
-        return redirect()->route('reader.show',$id);
+        return redirect()->route('user.show',$id);
     }
 }
