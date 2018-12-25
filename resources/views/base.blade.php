@@ -39,8 +39,7 @@
 <body>
 <div class="wrapper">
 
-    <div class="sidebar" data-active-color="rose" data-background-color="black"
-         data-image="../assets/img/sidebar-1.jpg">
+    <div class="sidebar" data-active-color="rose" data-background-color="black">
         <!--
             Tip 1: You can change the color of active element of the sidebar using: data-active-color="purple | blue | green | orange | red | rose"
             Tip 2: you can also add an image using data-image tag
@@ -96,14 +95,14 @@
             </div>
             <ul class="nav">
 
-                <li class="active">
+                <li class="{{Request::segment(1) == 'dashboard' ? 'active' : null}}">
                     <a href="./dashboard.html">
                         <i class="material-icons">dashboard</i>
                         <p> Dashboard </p>
                     </a>
                 </li>
 
-                <li>
+                <li class="{{Request::segment(1) == 'category' ? 'active' : null}}">
                     <a href="{{route('category.index')}}">
                         <i class="material-icons">category</i>
                         <p> Manage Category
@@ -111,7 +110,7 @@
                     </a>
                 </li>
 
-                <li>
+                <li class="{{Request::segment(1) == 'news' ? 'active' : null}}">
                     <a href="{{route('news.index')}}">
                         <i class="fa fa-newspaper"></i>
                         <p> Manage News
@@ -119,29 +118,29 @@
                     </a>
                 </li>
 
-                <li>
+                <li class="{{Request::segment(1) == 'notification' ? 'active' : null}}">
                     <a href="{{route('notification.index')}}">
                         <i class="material-icons">notifications</i>
                         <p> Manage Notification </p>
                     </a>
                 </li>
 
-                <li>
+                <li class="{{Request::segment(1) == 'reader' ? 'active' : null}}">
                     <a href="{{route('reader.index')}}">
                         <i class="fa fa-users"></i>
                         <p> Registered Readers </p>
                     </a>
                 </li>
 
-                <li>
+                <li class="{{Request::segment(1) == 'user' ? 'active' : null}}">
                     <a href="{{route('user.index')}}">
                         <i class="fa fa-users-cog"></i>
                         <p> Administrator </p>
                     </a>
                 </li>
 
-                <li>
-                    <a href="#">
+                <li class="{{Request::segment(1) == 'settings' ? 'active' : null}}">
+                    <a href="{{route('settings.index')}}">
                         <i class="material-icons">settings</i>
                         <p> Settings </p>
                     </a>
