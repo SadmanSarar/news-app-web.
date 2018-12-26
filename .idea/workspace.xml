@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b0bfd599-7b32-4083-b377-2c18da7adcda" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/base.blade.php" afterPath="$PROJECT_DIR$/resources/views/base.blade.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,11 +26,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dashboard.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dashboard.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/dashboard/dashboard.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="6" column="27" lean-forward="true" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+            <state relative-caret-position="315">
+              <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/base.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="100" column="42" lean-forward="false" selection-start-line="100" selection-start-column="42" selection-end-line="100" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -55,6 +64,7 @@
       <find>index</find>
       <find>image</find>
       <find>body</find>
+      <find>Dashbor</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -111,9 +121,9 @@
         <option value="$PROJECT_DIR$/app/Data/Model/Settings.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/SettingsController.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/settings/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/base.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/dashboard/dashboard.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/base.blade.php" />
       </list>
     </option>
   </component>
@@ -206,7 +216,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="HomeContro&#9;null&#9;null&#10;web&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/routes/web.php&#10;base&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/resources/views/base.blade.php&#10;create_sett&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/database/migrations/2018_12_20_085135_create_setting_table.php&#10;edit&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/resources/views/admin/news/edit.blade.php&#10;User&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/app/Http/Controllers/Admin/UserController.php&#10;ReaderCon&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/app/Http/Controllers/Admin/ReaderController.php&#10;user&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/database/migrations/2014_10_12_000000_create_users_table.php&#10;ReaderC&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/app/Http/Controllers/Admin/ReaderController.php&#10;UserContro&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/app/Http/Controllers/Admin/UserController.php&#10;index&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/resources/views/admin/user/index.blade.php&#10;users&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/database/migrations/2014_10_12_000000_create_users_table.php&#10;Read&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/app/Http/Controllers/Admin/ReaderController.php&#10;Reader&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/app/Http/Controllers/Admin/ReaderController.php&#10;create_read&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/database/migrations/2018_12_20_085709_create_readers_table.php&#10;create_user&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/database/migrations/2014_10_12_000000_create_users_table.php&#10;NotificationCon&#9;null&#9;null&#10;notifi&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/database/migrations/2018_12_20_084048_create_notifications_table.php&#10;Cate&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/app/Http/Controllers/Admin/CategoryController.php&#10;Categor&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/app/Data/Model/Category.php&#10;create_cate&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/database/migrations/2018_12_20_083211_create_categories_table.php&#10;Category&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/app/Http/Controllers/Admin/CategoryController.php&#10;categor&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/database/migrations/2018_12_20_083211_create_categories_table.php&#10;Show&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/resources/views/admin/news/show.blade.php&#10;News&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/app/Data/Model/News.php&#10;create&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/resources/views/admin/news/create.blade.php&#10;inde&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/resources/views/admin/news/index.blade.php&#10;env&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/.env&#10;Catego&#9;null&#9;null&#10;compose&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/composer.json&#10;Home&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/app/Http/Controllers/HomeController.php&#10;das&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/resources/views/dashboard.blade.php&#10;dashboar&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/resources/views/dashboard.blade.php&#10;app&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/resources/views/layouts/app.blade.php" />
+    <property name="SearchEverywhereHistoryKey" value="base&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/resources/views/base.blade.php&#10;HomeContro&#9;null&#9;null&#10;web&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/routes/web.php&#10;create_sett&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/database/migrations/2018_12_20_085135_create_setting_table.php&#10;edit&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/resources/views/admin/news/edit.blade.php&#10;User&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/app/Http/Controllers/Admin/UserController.php&#10;ReaderCon&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/app/Http/Controllers/Admin/ReaderController.php&#10;user&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/database/migrations/2014_10_12_000000_create_users_table.php&#10;ReaderC&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/app/Http/Controllers/Admin/ReaderController.php&#10;UserContro&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/app/Http/Controllers/Admin/UserController.php&#10;index&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/resources/views/admin/user/index.blade.php&#10;users&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/database/migrations/2014_10_12_000000_create_users_table.php&#10;Read&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/app/Http/Controllers/Admin/ReaderController.php&#10;Reader&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/app/Http/Controllers/Admin/ReaderController.php&#10;create_read&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/database/migrations/2018_12_20_085709_create_readers_table.php&#10;create_user&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/database/migrations/2014_10_12_000000_create_users_table.php&#10;NotificationCon&#9;null&#9;null&#10;notifi&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/database/migrations/2018_12_20_084048_create_notifications_table.php&#10;Cate&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/app/Http/Controllers/Admin/CategoryController.php&#10;Categor&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/app/Data/Model/Category.php&#10;create_cate&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/database/migrations/2018_12_20_083211_create_categories_table.php&#10;Category&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/app/Http/Controllers/Admin/CategoryController.php&#10;categor&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/database/migrations/2018_12_20_083211_create_categories_table.php&#10;Show&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/resources/views/admin/news/show.blade.php&#10;News&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/app/Data/Model/News.php&#10;create&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/resources/views/admin/news/create.blade.php&#10;inde&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/resources/views/admin/news/index.blade.php&#10;env&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/.env&#10;Catego&#9;null&#9;null&#10;compose&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/composer.json&#10;Home&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/app/Http/Controllers/HomeController.php&#10;das&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/resources/views/dashboard.blade.php&#10;dashboar&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/resources/views/dashboard.blade.php&#10;app&#9;FILE&#9;file:///Users/macbook/Desktop/bit-bucket/personal/web/news-app/resources/views/layouts/app.blade.php" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -249,12 +259,12 @@
       <workItem from="1545652718018" duration="1142000" />
       <workItem from="1545676999906" duration="5440000" />
       <workItem from="1545724062046" duration="223000" />
-      <workItem from="1545806410695" duration="1501000" />
+      <workItem from="1545806410695" duration="1649000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34729000" />
+    <option name="totallyTimeSpent" value="34877000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -601,16 +611,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/base.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="67" column="26" lean-forward="true" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
-          <folding>
-            <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -639,8 +639,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/dashboard/dashboard.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="6" column="27" lean-forward="true" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+        <state relative-caret-position="315">
+          <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/base.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="100" column="42" lean-forward="false" selection-start-line="100" selection-start-column="42" selection-end-line="100" selection-end-column="42" />
           <folding />
         </state>
       </provider>

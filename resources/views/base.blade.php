@@ -97,8 +97,8 @@
             </div>
             <ul class="nav">
 
-                <li class="{{Request::segment(1) == 'dashboard' ? 'active' : null}}">
-                    <a href="./dashboard.html">
+                <li class="{{(Request::segment(1) == '' || Request::segment(1) == 'home') ? 'active' : null}}">
+                    <a href="{{route('home')}}">
                         <i class="material-icons">dashboard</i>
                         <p> Dashboard </p>
                     </a>
