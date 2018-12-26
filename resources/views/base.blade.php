@@ -59,12 +59,14 @@
         <div class="sidebar-wrapper">
             <div class="user">
                 <div class="photo">
-                    <img src="../assets/img/faces/avatar.jpg"/>
+                    <i class="fas fa-user"
+                       style="margin: 4px; font-size: 32px; color: white"
+                    ></i>
                 </div>
                 <div class="info">
                     <a data-toggle="collapse" href="#collapseExample" class="collapsed">
                     <span>
-                         Tania Andrew
+                         {!! auth('web')->user()->name !!}
                         <b class="caret"></b>
                     </span>
                     </a>
@@ -190,10 +192,12 @@
                                 <li><a href="#"><i class="material-icons" style="margin-right: 16px">account_circle</i>Profile</a>
                                 </li>
                                 <li>
-                                    <a type="submit" onclick="document.getElementById('menu_logout').submit();"><i class="material-icons"
-                                                                                                                   style="margin-right: 16px">power_settings_new</i>
+                                    <a type="submit" onclick="document.getElementById('menu_logout').submit();"><i
+                                                class="material-icons"
+                                                style="margin-right: 16px">power_settings_new</i>
                                         Logout</a>
-                                    <form id="menu_logout" action="{{route('logout')}}" method="post" style="display: none;">
+                                    <form id="menu_logout" action="{{route('logout')}}" method="post"
+                                          style="display: none;">
                                         {!! csrf_field() !!}
                                     </form>
                                 </li>

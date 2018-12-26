@@ -2,14 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Data\Model\Category;
+use App\Data\Model\News;
+use App\Data\Model\Notification;
+use App\Data\Model\Reader;
 
 class HomeController extends Controller
 {
     /**
      * Create a new controller instance.
      *
-     * @return void
      */
     public function __construct()
     {
@@ -23,6 +25,16 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('base');
+        $news_count         = News::all()->count();
+        $category_count     = Category::all()->count();
+        $notification_count = Notification::all()->count();
+        $reader_count       = Reader::all()->count();
+
+        return view('admin.dashboard.dashboard', compact(
+            'news_count',
+            'category_count',
+            'notification_count',
+            'reader_count'
+        ));
     }
 }
