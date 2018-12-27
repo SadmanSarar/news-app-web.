@@ -3,6 +3,7 @@
 namespace App\Exceptions;
 
 use Exception;
+use Illuminate\Auth\AuthenticationException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 
 class Handler extends ExceptionHandler
@@ -47,5 +48,20 @@ class Handler extends ExceptionHandler
     public function render($request, Exception $exception)
     {
         return parent::render($request, $exception);
+    }
+
+    protected function unauthenticated($request, AuthenticationException $exception)
+    {
+        if ($request->expectsJson()) {
+            $response               = new \stdClass();
+            $response->code         = 401;
+            $response->app_message  = 'authentication unsuccessful, token mismatch';
+            $response->user_message = 'You may be logged out. Please login again.';
+            $response->context      = 'authentication';
+
+            return response()->json($response, $response->code);
+        }
+
+        return redirect()->guest('/');
     }
 }

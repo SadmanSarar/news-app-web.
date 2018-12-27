@@ -19,6 +19,7 @@ class CreateReadersTable extends Migration
             $table->string('image')->nullable();
             $table->string('email')->unique();
             $table->string('password');
+            $table->string('api_token')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });
