@@ -14,9 +14,12 @@
 
 Auth::routes();
 Route::any('/register', 'HomeController@index');
+Route::get('/', function(){
+    return redirect()->route('login');
+});
 Route::group(['middleware' => 'auth'], function () {
     Route::get('/home', 'HomeController@index')->name('home');
-    Route::get('/', 'HomeController@index');
+//    Route::get('/', 'HomeController@index');
     Route::resource('news', 'Admin\\NewsController');
     Route::resource('category', 'Admin\\CategoryController');
     Route::resource('notification', 'Admin\\NotificationController');
