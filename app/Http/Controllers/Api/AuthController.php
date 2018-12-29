@@ -17,7 +17,8 @@ class AuthController extends Controller
         $email    = $request->get('email');
         $password = $request->get('password');
 
-        if ($email == '' || $password = '') {
+
+        if ($email == '' || $password == '') {
             $response               = new \stdClass();
             $response->code         = 422;
             $response->app_message  = "Incomplete Request. Email and Password required";
