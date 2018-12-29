@@ -14,8 +14,17 @@ class AuthController extends Controller
 
     public function postLogin(Request $request)
     {
-        $email = $request->get('email');
+        $email    = $request->get('email');
         $password = $request->get('password');
+
+        if ($email == '' || $password = '') {
+            $response               = new \stdClass();
+            $response->code         = 422;
+            $response->app_message  = "Incomplete Request. Email and Password required";
+            $response->user_message = 'Incomplete Request. Email and Password required';
+            $response->context      = 'login';
+            return response()->json($response, 422);
+        }
 
         $user = Reader::where('email', '=', $email)->first();
 
@@ -33,13 +42,13 @@ class AuthController extends Controller
         $user->api_token = bcrypt(time());
         $user->save();
 
-        $response                = new \stdClass();
-        $response->code          = 200;
-        $response->app_message   = "login success, credentials match, {$user->email}, {$user->token_issued_at}";
-        $response->user_message  = 'Log In Successful';
-        $response->context       = 'login';
-        $response->access_token  = $user->api_token;
-        $response->user          = array($user);
+        $response               = new \stdClass();
+        $response->code         = 200;
+        $response->app_message  = "login success, credentials match, {$user->email}, {$user->token_issued_at}";
+        $response->user_message = 'Log In Successful';
+        $response->context      = 'login';
+        $response->access_token = $user->api_token;
+        $response->user         = array($user);
 
         return response()->json($response, 200);
 
@@ -58,7 +67,7 @@ class AuthController extends Controller
         $match = Hash::check($oldPassword, $user->password);
 
         if ($match) {
-            $user->password = bcrypt($password);
+            $user->password  = bcrypt($password);
             $user->api_token = null;
             $user->save();
 
