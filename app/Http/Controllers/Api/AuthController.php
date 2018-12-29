@@ -6,12 +6,13 @@ use App\Data\Model\Reader;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Api\ChangePasswordRequest;
 use App\Http\Requests\Api\LoginRequest;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 
 class AuthController extends Controller
 {
 
-    public function postLogin(LoginRequest $request)
+    public function postLogin(Request $request)
     {
         $email = $request->get('email');
         $password = $request->get('password');
