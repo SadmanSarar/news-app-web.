@@ -6,6 +6,7 @@ use App\Data\Model\Reader;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Api\ChangePasswordRequest;
 use App\Http\Requests\Api\LoginRequest;
+use App\Http\Resources\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Log;
@@ -20,12 +21,6 @@ class AuthController extends Controller
         $email    = $request->input('email');
         $password = $request->input('password');
         
-        // return response()->json([
-        //     '_email' => $email,
-        //     '_password' => $password,
-        //     ],200);
-
-
         if ($email == '' || $password == '') {
             $response               = new \stdClass();
             $response->code         = 422;
@@ -57,7 +52,7 @@ class AuthController extends Controller
         $response->user_message = 'Log In Successful';
         $response->context      = 'login';
         $response->access_token = $user->api_token;
-        $response->user         = array($user);
+        $response->user         = new User($user);
 
         return response()->json($response, 200);
 
