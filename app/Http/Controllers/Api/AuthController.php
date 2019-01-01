@@ -8,14 +8,22 @@ use App\Http\Requests\Api\ChangePasswordRequest;
 use App\Http\Requests\Api\LoginRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Log;
+
 
 class AuthController extends Controller
 {
 
     public function postLogin(Request $request)
     {
-        $email    = $request->get('email');
-        $password = $request->get('password');
+        Log::error($request);
+        $email    = $request->input('email');
+        $password = $request->input('password');
+        
+        // return response()->json([
+        //     '_email' => $email,
+        //     '_password' => $password,
+        //     ],200);
 
 
         if ($email == '' || $password == '') {
