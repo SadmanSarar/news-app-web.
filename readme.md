@@ -48,3 +48,6 @@ DB_PASSWORD=YOUR_DB_PASSWORD
 
 ![](docs/screenshots/screenshot-04.png)
 
+
+#TODO
+- integrate notification system
