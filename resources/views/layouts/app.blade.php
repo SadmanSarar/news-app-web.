@@ -18,6 +18,9 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{asset('img/logo.svg')}}"/>
+    <link rel="icon" type="image/png" href="{{asset('img/logo.svg')}}"/>
+
 </head>
 <body style="background: #e4e4e4">
     <div id="app">
