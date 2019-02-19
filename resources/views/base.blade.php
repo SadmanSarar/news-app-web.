@@ -57,11 +57,11 @@
         -->
 
         <div class="logo">
-            <a href="http://www.creative-tim.com" class="simple-text logo-mini">
+            <a href="" class="simple-text logo-mini">
                 NA
             </a>
 
-            <a href="http://www.creative-tim.com" class="simple-text logo-normal">
+            <a href="" class="simple-text logo-normal">
                 News App
             </a>
         </div>
@@ -84,21 +84,22 @@
                     <div class="collapse" id="collapseExample">
                         <ul class="nav">
                             <li>
-                                <a href="#">
-                                    <span class="sidebar-mini"> MP </span>
+                                <a href="{{route('user.show',auth()->user()->id)}}">
+                                    {{--<span class="sidebar-mini"> MP </span>--}}
+                                    <i class="fa fa-user"></i>
                                     <span class="sidebar-normal"> My Profile </span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
-                                    <span class="sidebar-mini"> EP </span>
+                                <a href="{{route('user.edit',auth()->user()->id)}}">
+                                    <i class="fa fa-edit"></i>
                                     <span class="sidebar-normal"> Edit Profile </span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
-                                    <span class="sidebar-mini"> S </span>
-                                    <span class="sidebar-normal"> Settings </span>
+                                <a href="{{route('logout')}}">
+                                    <i class="fas fa-sign-out-alt"></i>
+                                    <span class="sidebar-normal"> Logout </span>
                                 </a>
                             </li>
                         </ul>
@@ -199,7 +200,7 @@
                                 </p>
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a href="#"><i class="material-icons" style="margin-right: 16px">account_circle</i>Profile</a>
+                                <li><a href="{{route('user.show',auth()->user()->id)}}"><i class="material-icons" style="margin-right: 16px">account_circle</i>Profile</a>
                                 </li>
                                 <li>
                                     <a type="submit" onclick="document.getElementById('menu_logout').submit();"><i
